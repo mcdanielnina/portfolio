@@ -1,0 +1,163 @@
+body {
+	font-family:Avenir, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16pt;
+	
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+  margin-left:10px;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 0 30px;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+header{
+	background: #e83c3c;
+	border-bottom: 3px solid #000000;
+	color:#000000;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+footer{
+  background-color: #e83c3c;
+  color: #000000;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.work{
+	min-height: 600px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.work> img{
+	margin: 10px;
+	width: 600px;
+}
+
+
+#image1:hover{
+	opacity: 0.4;
+}
+#image2:hover{
+	opacity: 0.4;
+}
+#image3:hover{
+	opacity: 0.4;
+}
+
+
+
+
+.nav_links{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+}
+
+
+
+.nav_item a:hover, a:focus{
+  color: #95db70;
+}
+
+.nav_item a.current{
+	bacground: white;
+
+}
+
+@media screen and (min-width:800px){
+	header{
+	border-bottom: 3px solid #000000;
+	color:#000000;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+}
+.nav_links{
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction:row;
+}
+
+.nav_item a{
+	color: #000000;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: #95db70;
+  text-decoration-style: ;
+}
+
+
+
+
+.resume{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.about-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 5px;
+
+}
+
+.about-image{
+	grid-column: 2;
+	padding: 15px;
+}
+
+.about_text-block{
+	grid-column:4/4;
+}
