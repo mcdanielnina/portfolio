@@ -8,16 +8,26 @@
 	<!--<link rel="icon" type="image/png" href="images/light-bulb.png">-->
 	<!--<link rel="stylesheet" href="css/html5reset.css">-->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1YG9N1FTHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1YG9N1FTHJ');
+</script>
 </head>
 <body>
 	<a class = "skip" href="#skip">Skip to Main Content</a>
 <header>
 	<h1>Nina McDaniel</h1> 
 	<nav>
-		<ul class="nav_links">
-			<li class="nav_item"><a href="index.html"> Work</a></li>
-			<li class="nav_item"><a href="about.html"> About</a></li>
-	    	<li class="nav_item"><a href="resume.html"> Resume</a></li>
+		<ul>
+			<li><a href="index.html"> Work</a></li>
+			<li><a href="about.html" class="active_page"> About</a></li>
+	    	<li><a href="resume.html"> Resume</a></li>
+	    	<li><a href="fav-things.html"> My Favorite Things</a></li>
 		  
 		</ul>
 	</nav>
@@ -26,7 +36,20 @@
 
 <main class="about-container" id="skip" tabindex="0">
 <div class="about-image">
-	<img src="images/profile.png" alt="profile" id="profile">
+	<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/profile.png" alt="Profile" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>I like to...</h1> 
+      <p>Play with my cat Daria</p> 
+      <p>Go on walks</p>
+      <p>Watch movies</p>
+    </div>
+  </div>
+</div>
+
 </div>
 <div class="about_text-block">
 
@@ -45,10 +68,11 @@
 <br>
 <br>
 <footer>
-<!--Let's stay in touch!
+Let's stay in touch!
 <br>
-<a class="footer-links">
-	<a href="mailto:ninmcdani@gmail.com">ninmcdani@gmail.com</a> | <a href="mailto:nsmcdani@umich.edu">nsmcdani@umich.edu</a>| <a href="https://www.linkedin.com/in/nina-mcdaniel-b288699a/">LinkedIn</a>-->
+
+<a href="mailto:ninmcdani@gmail.com">ninmcdani@gmail.com</a> | <a href="mailto:nsmcdani@umich.edu">nsmcdani@umich.edu</a>| <a href="https://www.linkedin.com/in/nina-mcdaniel-b288699a">LinkedIn</a>
+<br>
 <br>
 Nina McDaniel &copy; 2020
 </footer>
